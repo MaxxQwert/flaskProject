@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block title -%}
+Selecting a section
+{%- endblock %}
+
+{% block body %}
+<h1>Selecting a section</h1>
+<hr>
+<p><a href="{{ url_for('product_app.product_list') }}">Product list</a></p>
+<p><a href="{{ url_for('service_app.services_list') }}">Service list</a></p>
+{% endblock %}

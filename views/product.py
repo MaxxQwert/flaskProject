@@ -3,16 +3,16 @@ from werkzeug.exceptions import BadRequest
 
 product_app = Blueprint("product_app", __name__)
 
-
 PRODUCTS = {
     1: 'Smartphone',
     2: 'Tablet',
     3: 'Laptop',
 }
 
+
 @product_app.route("/")
 def product_list():
-    return render_template("products/index.html", products=PRODUCTS)
+    return render_template("products/products_list.html", products=PRODUCTS)
 
 
 @product_app.route("/<int:product_id>/")

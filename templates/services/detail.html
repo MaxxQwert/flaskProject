@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block title -%}
+Service #{{service_id}}}
+{%- endblock %}
+
+{% block body %}
+<h1>Service <code>{{service_name}}</code></h1>
+<hr>
+<a href="{{ url_for('service_app.services_list') }}">Service List</a>
+{% endblock %}
