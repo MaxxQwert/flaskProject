@@ -10,7 +10,7 @@ SERVICES = {
 }
 
 
-@service_app.route("/")
+@service_app.route("/", methods=["GET", "POST"])
 def services_list():
     return render_template("services/services_list.html", services=SERVICES)
 

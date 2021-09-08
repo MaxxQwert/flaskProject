@@ -10,7 +10,7 @@ PRODUCTS = {
 }
 
 
-@product_app.route("/")
+@product_app.route("/", methods=["GET", "POST"])
 def product_list():
     return render_template("products/products_list.html", products=PRODUCTS)
 

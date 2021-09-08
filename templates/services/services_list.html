@@ -18,5 +18,23 @@ Services
   </ul>
   <p></p>
   <p><a href="{{ url_for('index') }}">Home</a></p>
+
+   <form action="" method="post" enctype="multipart/form-data">
+    <table>
+        <tbody>
+            <tr>
+                                 <td> Вертикальная ориентация: </td>
+                <td><input type="file" name="avatar"></td>
+            </tr>
+            <tr>
+                                 <td> Описание: </td>
+                <td><input type="text" name="desc"></td>
+            </tr>
+            <tr>
+                                 <td> <input type = "submit" value = "Submit"> </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 {% endblock %}
